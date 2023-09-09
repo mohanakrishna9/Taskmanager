@@ -1,0 +1,86 @@
+.container {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 88vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style the card */
+.card {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 50vh;
+  background:#FFBE7B;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+  border:2px solid yellow;
+}
+
+/* Style the card header */
+.card-header {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  background-color: #00539C,;
+  color: white;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the active card header (when clicked) */
+.card-header.active {
+  background-color: rgba(0, 123, 255, 1);
+}
+
+/* Style the card body */
+.card-body {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style the form */
+form {
+  text-align: center;
+}
+
+/* Style the form title */
+h2 {
+  margin-bottom: 20px;
+  color:darkturquoise;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Style form inputs and buttons */
+input[type="text"],
+input[type="password"],
+button {
+  color:black;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease-in-out;
+  border:1px solid black;
+}
+
+button {
+  background-color: rgba(255, 225, 0, 0.8);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
